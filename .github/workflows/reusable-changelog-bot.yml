@@ -65,8 +65,8 @@ jobs:
         if: steps.check-commits.outputs.has_noteworthy == 'true'
         uses: actions/checkout@v6
         with:
-          repository: openwisp/openwisp-utils
-          ref: master
+          repository: pushpitkamboj/openwisp-utils
+          ref: test/changelog-bot
           sparse-checkout: |
             .github/actions/changelog-generator
           path: openwisp-utils-action
